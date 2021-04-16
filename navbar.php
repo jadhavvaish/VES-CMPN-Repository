@@ -1,7 +1,7 @@
 <Img Src="Capture.png">
 <?php
   // Check if the user is student, if not hide sensitive information
-if($_SESSION["role"]==1){
+if($_SESSION["role"]!=1){
     echo '<a class="upload" href="upload.php">Upload</a>';
 }
 ?>
@@ -38,6 +38,6 @@ if($_SESSION["role"]==1){
       <a href="#">Industry</a>
     </div>
   </div>
-  <a href="#">Research</a>
+  <a href="research.php">Research</a>
   <a class="logout" href=logout.php>Log Out</a>
 </div>

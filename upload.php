@@ -90,54 +90,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 ?>
 
 <!doctype html>
-<html>
-<link rel="stylesheet" href="styles1.css">
-<head>
-  <title>Welcome to CMPN Repository</title>
-</head>
-<body>
-<Img Src="Capture.png">
-  <div class="navbar">
-  <a href="fhomepage.php">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Curriculum
-      </button>
-    <div class="dropdown-content">
-      <a href="sem3.php">Sem 3</a>
-      <a href="#">Sem 4</a>
-      <a href="#">Sem 5</a>
-      <a href="#">Sem 6</a>
-      <a href="#">Sem 7</a>
-      <a href="#">Sem 8</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Extra Curricular
-      </button>
-    <div class="dropdown-content">
-      <a href="#">Praxis</a>
-      <a href="#">Utsav</a>
-      <a href="#">Illusions</a>
-      <a href="#">Octaves</a>
-      <a href="#">Sphurti</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Internships
-      </button>
-    <div class="dropdown-content">
-      <a href="#">Inhouse</a>
-      <a href="#">Industry</a>
-    </div>
-  </div>
-  <a href="#">Research</a>
-  <a class="logout" href=logout.php>Log Out</a>
-</div>
-<centre>
-<div class="form">
-  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method ="post" style="border:2px solid #ccc" name="uploadForm">
-    <div class="container">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Upload</title>
+  </head>
+  <body>
+  <?php include ("navbar.php"); ?>
+<div class='container'>
+  <div class='row'>
+    <div class='col offset-2'>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method ="post" name="uploadForm">
         <br><br><label for="title" style="font-size: large;" ><b>Title:</b></label>
         <input type="text" placeholder="Title" name="title" size="70" value="<?php echo $title; ?>" required>
         <span class="help-block"><?php echo $title_err; ?></span><br><br><br>
@@ -175,11 +144,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <option value="assignment">Assignments</option>
         <option value="experiment">Experiments</option>
         </select><br><br>
-      </div>
         <button type="submit" value="Submit" class = "submitbutton">Submit</button>
 
   </form>
 </div>
-</centre>
-</body>
+</div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

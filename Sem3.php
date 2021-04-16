@@ -26,12 +26,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <?php include ("navbar.php"); ?>
 <div class='container ml-0'>
   <div class='row'>
-    <!-- <div class='col-lg-3 sidenav'>
-    <a href="sem3.php" class="active">2020-21</a>
-    <a href="#">2019-20</a>
-    <a href="#">2018-19</a>
-    <a href="#">2017-18</a>
-    </div> -->
     <div class="nav flex-column nav-pills col-lg-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
   <a class="nav-link active " id="v-pills-home-tab" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">2019-20</a>
   <a class="nav-link mt-2" id="v-pills-profile-tab" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false">2018-19</a>

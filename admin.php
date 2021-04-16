@@ -84,7 +84,7 @@ if($_SESSION["role"]!=2){
                         <div class="sidebar-nav navbar-collapse">
                             <ul class="nav" id="side-menu">
                                 <li>
-                                    <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                                    <a href="admin.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                                 </li>
                             </ul>
                         </div>
