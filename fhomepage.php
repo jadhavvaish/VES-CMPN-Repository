@@ -22,7 +22,7 @@ $link->close();
 </head>
 <body>
 <Img Src="Capture.png">
-  <a class="upload" href="upload.php">Upload</a>
+  
   <div class="navbar">
   <a href="fhomepage.php">Home</a>
   <div class="dropdown">
@@ -57,6 +57,7 @@ $link->close();
     </div>
   </div>
   <a href="#">Research</a>
+  <a class="upload" href="upload.php">Upload</a>
   <a class="logout" href=logout.php>Log Out</a>
 </div>
 <center>
