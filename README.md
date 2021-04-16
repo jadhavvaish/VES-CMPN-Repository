@@ -9,5 +9,5 @@
 - [priyal56](https://github.com/priyal56/)
 - [Dhruv-Sachdev1313](https://github.com/Dhruv-Sachdev1313)  
 
-Made with ❤️
+Made with ❤️ by group - Best-Mini-Project-Group
 
