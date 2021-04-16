@@ -1,10 +1,16 @@
 <Img Src="Capture.png">
-  <div class="navbar">
+<?php
+  // Check if the user is student, if not hide sensitive information
+if($_SESSION["role"]==1){
+    echo '<a class="upload" href="upload.php">Upload</a>';
+}
+?>
+  <div class="navbar-custom">
   <a href="homepage.php">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Curriculum
+  <div class="dropdown-custom">
+    <button class="dropbtn-custom">Curriculum
       </button>
-    <div class="dropdown-content">
+    <div class="dropdown-custom-content">
       <a href="sem3.php">Sem 3</a>
       <a href="#">Sem 4</a>
       <a href="#">Sem 5</a>
@@ -13,10 +19,10 @@
       <a href="#">Sem 8</a>
     </div>
   </div>
-  <div class="dropdown">
-    <button class="dropbtn">Extra Curricular
+  <div class="dropdown-custom">
+    <button class="dropbtn-custom">Extra Curricular
       </button>
-    <div class="dropdown-content">
+    <div class="dropdown-custom-content">
       <a href="#">Praxis</a>
       <a href="#">Utsav</a>
       <a href="#">Illusions</a>
@@ -24,10 +30,10 @@
       <a href="#">Sphurti</a>
     </div>
   </div>
-  <div class="dropdown">
-    <button class="dropbtn">Internships
+  <div class="dropdown-custom">
+    <button class="dropbtn-custom">Internships
       </button>
-    <div class="dropdown-content">
+    <div class="dropdown-custom-content">
       <a href="#">Inhouse</a>
       <a href="#">Industry</a>
     </div>

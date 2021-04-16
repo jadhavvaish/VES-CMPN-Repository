@@ -32,51 +32,36 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <a href="#">2017-18</a>
 </div>
 <div class="main">
-  <h2><U>SEMESTER 3</U></h2>
+  <h2 class='mt-3 mb-0 ml-5'><U>SEMESTER 3</U></h2>
   <br>
-  <p style="font-size:20px">
-  <!-- <a href="oopm.php">Object Oriented Programming Language</a>
-  <br>
-  <a href="dsgtexp.php">Discrete Structure And Graph Theory</a>
-  <br>
-  <a href="maths.php">Applied Mathematics</a>
-  <br>
-  <a href="ds.php">Data Structure</a>
-  <br>
-  <a href="cg.php">Computer Graphics</a> -->
-  <div class="card w-75">
+  <div class="mt-0 card w-75">
   <div class="card-body">
     <h5 class="card-title">Object Oriented Programming Language</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="oopm.php" class="btn btn-primary">Button</a>
+    <a href="oopm.php" class="btn btn-primary">Open</a>
   </div>
 </div>
 <div class="card w-75">
   <div class="card-body">
     <h5 class="card-title">Discrete Structure And Graph Theory</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="dsgtexp.php" class="btn btn-primary">Button</a>
+    <a href="dsgtexp.php" class="btn btn-primary">Open</a>
   </div>
 </div>
 <div class="card w-75">
   <div class="card-body">
     <h5 class="card-title">Applied Mathematics</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="maths.php" class="btn btn-primary">Button</a>
+    <a href="maths.php" class="btn btn-primary">Open</a>
   </div>
 </div>
 <div class="card w-75">
   <div class="card-body">
     <h5 class="card-title">Data Structure</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="ds.php" class="btn btn-primary">Button</a>
+    <a href="ds.php" class="btn btn-primary">Open</a>
   </div>
 </div>
 <div class="card w-75">
   <div class="card-body">
     <h5 class="card-title">Computer Graphics</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="cg.php" class="btn btn-primary">Button</a>
+    <a href="cg.php" class="btn btn-primary">Open</a>
   </div>
 </div>
 </div>

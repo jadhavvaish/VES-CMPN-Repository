@@ -2,16 +2,6 @@
 // Initialize the session
 session_start();
 
-// Check if the user is already logged in, if yes then redirect him to homepage
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  if($_SESSION["role"]==0)
-    {header("location: homepage.php");}
-    else {
-    header("location: fhomepage.php");
-    }
-    exit;
-}
-
 // Include config file
 require_once "config.php";
 
@@ -67,12 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["id"] = $id;
                             $_SESSION["ves_id"] = $ves_id;
                             $_SESSION["role"]=$role;
-                            // Redirect user to homepage
-                            if($_SESSION["role"]==0)
-                              {header("location: homepage.php");}
-                              else {
-                              header("location: fhomepage.php");
-                              }
+                            
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
