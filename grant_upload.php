@@ -1,16 +1,3 @@
-<?php
-// Include config file
-require_once "config.php";
-// Initialize the session
-session_start();
-
-// Check if the user is admin, if not then redirect them to login page
-if($_SESSION["role"]!=2){
-    header("location: login.php");
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +37,7 @@ if($_SESSION["role"]!=2){
         <div id="wrapper">
 
             <!-- Navigation -->
-                            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -92,84 +79,31 @@ if($_SESSION["role"]!=2){
                     </div>
                     <!-- /.navbar-static-side -->
                 </nav>
-                        <!-- The End of the Header --><div id="page-wrapper">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Dashboard</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-book fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div>Research Papers</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="paper_upload.php">
-                    <div class="panel-footer">
-                        <span class="pull-left">Upload</span>
-                        <span class="pull-right"><i class="fa fa-upload"></i></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-        <!-- Placeholder for new cards-->
-        <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-inr fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div>Grants</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="grant_upload.php">
-                    <div class="panel-footer">
-                        <span class="pull-left">Upload</span>
-                        <span class="pull-right"><i class="fa fa-upload"></i></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-microchip fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div>Industrial Projects</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="project_upload.php">
-                    <div class="panel-footer">
-                        <span class="pull-left">Upload</span>
-                        <span class="pull-right"><i class="fa fa-upload"></i></span>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-        <!-- Placeholder for new cards-->    
-        </div>
-    </div>
+                        <!-- The End of the Header -->
+    <div id="page-wrapper">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method ="post">
+      <div class="form-group">
+        <label for="fName">Faculty Involved</label>
+        <input type="text" class="form-control" name="fname" placeholder="Enter Faculty Name.." >
+      </div>
+      <div class="form-group">
+        <label for="Title">Grant Title</label>
+        <input type="text" class="form-control"  name="title" placeholder="Enter Title" >
+      </div>
+      <div class="form-group">
+        <label for="desc">Description</label>
+        <input type="text" class="form-control"  name="desc" placeholder="Enter Description" >
+      </div>
+      <div class="form-group">
+        <label for="link">Type</label>
+        <input type="text" class="form-control"  name="link" placeholder="Enter Type" >
+      </div>
+      <div class="form-group">
+        <label for="link">Amount</label>
+        <input type="text" class="form-control"  name="link" placeholder="Enter Amount" >
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
 </div>
 <!-- /#page-wrapper -->
 
