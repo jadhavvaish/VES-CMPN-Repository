@@ -37,7 +37,6 @@ $link->close();
   <a class="nav-link active " id="v-pills-home-tab" data-toggle="pill" href="dsgtexp.php" role="tab" aria-controls="v-pills-home" aria-selected="true">Experiment</a>
   <a class="nav-link mt-2" id="v-pills-profile-tab" data-toggle="pill" href="dsgtass.php" role="tab" aria-controls="v-pills-profile" aria-selected="false">Assignment</a>
   <a class="nav-link mt-2" id="v-pills-messages-tab" data-toggle="pill" href="dsgtnotes.php" role="tab" aria-controls="v-pills-messages" aria-selected="false">Notes</a>
-  <!-- <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a> -->
 </div>
 
 <!-- Page content -->
@@ -52,8 +51,7 @@ $link->close();
               <div class="card w-75">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $rows['Title'];?></h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="<?php echo $rows['Link'];?>" class="btn btn-primary">Button</a>
+                <a href="<?php echo $rows['Link'];?>" class="btn btn-primary">Link</a>
               </div>
               </div>
               <?php
