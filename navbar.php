@@ -1,10 +1,4 @@
 <Img Src="Capture.png">
-<?php
-  // Check if the user is student, if not hide sensitive information
-if($_SESSION["role"]!=1){
-    echo '<a class="upload" href="upload.php">Upload</a>';
-}
-?>
   <div class="navbar-custom">
   <a href="homepage.php">Home</a>
   <div class="dropdown-custom">
@@ -40,4 +34,10 @@ if($_SESSION["role"]!=1){
   </div>
   <a href="research.php">Research</a>
   <a class="logout" href=logout.php>Log Out</a>
+  <a class="upload  <?php
+    // Check if the user is student, if not hide sensitive information
+    if($_SESSION["role"]!=0){
+      echo 'hide';
+    }
+    ?>" href="upload.php"><i class="ionicons ion-android-upload"></i></a>
 </div>

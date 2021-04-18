@@ -30,8 +30,24 @@ $link->close();
   </head>
   <body>
   <?php include ("navbar.php"); ?>
+  
   <center>
   <h1 class='mt-2'>Welcome to VES CMPN Repository</h1>
+  </center>
+  <div class='card'>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col px-0'>
+          <img src='back-img.jpeg'/>
+        </div>
+        <div class='col'>
+          <p class='mt-4'>   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id leo scelerisque, lobortis risus a, fermentum purus. Proin a dui odio. Integer ornare, arcu ut placerat tempor, lacus nulla dapibus nisi, condimentum interdum libero risus vel magna. Morbi eu libero nisi. Maecenas nulla lectus, convallis vel cursus non, interdum ac magna. Morbi et rhoncus erat. Nam imperdiet sem quis lorem dapibus, id cursus nibh commodo. Mauris aliquam blandit leo id commodo. Aliquam auctor sit amet neque eget sagittis. Suspendisse tempus eu lacus non vehicula. Etiam et nunc ut enim rhoncus imperdiet facilisis et metus. Donec non pharetra erat, consequat gravida orci. Morbi commodo suscipit eleifend. Nunc tempor vitae mauris consequat pharetra. Vivamus ligula neque, pharetra nec laoreet ut, pharetra vel lacus.</p>
+          <p> Aenean aliquam urna urna, at tempor ligula ornare cursus. Praesent id quam faucibus, condimentum justo at, laoreet libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla elementum leo quis purus blandit tempus. Pellentesque quis porta tortor. Vivamus maximus tincidunt est. Donec tortor mi, malesuada sed nisi eu, convallis ullamcorper lectus. Ut molestie fringilla nisi ut egestas.</p>
+        </div>
+      </div>
+</div>
+</div>
+
   <fieldset>
   <h2 class='mt-2'> <legend exp><strong> <ins><p style="font-size:30px">Recently Added</legend> </h2>
   <!-- TABLE CONSTRUCTION-->
