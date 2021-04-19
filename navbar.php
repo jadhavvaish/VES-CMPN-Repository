@@ -17,7 +17,7 @@
     <button class="dropbtn-custom">Extra Curricular
       </button>
     <div class="dropdown-custom-content">
-      <a href="#">Praxis</a>
+      <a href="praxis.php">Praxis</a>
       <a href="#">Utsav</a>
       <a href="#">Illusions</a>
       <a href="#">Octaves</a>
