@@ -1,4 +1,7 @@
 <?php
+
+// Include config file
+require_once "config.php";
 // Initialize the session
 session_start();
 
@@ -7,6 +10,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+// SQL query to select data from database
+$sql = "SELECT * FROM event WHERE name='Praxis' AND event_year = '2021' ";
+$result = $link->query($sql);
+$link->close();
 ?>
 
 <!doctype html>
@@ -36,32 +43,25 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <h2 class='mt-3 mb-0 ml-5'><U>Praxis 2k21</U></h2>
       <br>
 
-    <div class="card mb-3">
-  <img src="pra-img.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Welcome to E-Praxis 2k21 !</h5>
-    <p class="card-text">Greetings from VESIT Renaissance Cell (VRC) !!
-
-While executing Praxis '17 (which was our first attempt at Praxis), we learnt that it is a great platform, which may help us in achieving our own objective of 'Skill Enhancement' within VESIT, while immensely benefiting VESITians and VESIT as a whole.  
-
-Praxis'18 and 19 added to our experiences to assist you better.
-
-This year again we are excited to present a plethora of events, to help enhance VESITisan their technical skills,  while needing them to invest very little of of their precious time.
-
-Praxis is expected to be a TechFest, and we have taken very sincere efforts to make sure that it remains 'Technical' and 'Festival'. 
-
-To deliver the best to you, this time we are working hand in hand, with the Technical Societies within VESIT viz. IEEE-VESIT, ISTE-VESIT, CSI-VESIT and ISA-VESIT and E-cell.
-
-We hope to meet or exceed your expectations !
-
--- Sincerely,
-
-VESIT Renaissance Cell !   </p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    
+              <?php 
+               while($rows=$result->fetch_assoc())
+              {
+              ?>
+              <div class="card mb-3">
+              <img src="data:image/jpeg;base64,'.base64_encode(<?php echo $rows['image'];?>).'" class="card-img-top" alt="...">
+              <div class="card-body">
+    <h5 class="card-title">Welcome to <?php echo $rows['name'];?> <?php echo $rows['event_year'];?> !</h5>
+    <p class="card-text">
+    <?php echo $rows['description'];?>
+     </p>
+    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
   </div>
     </div>
     <br><br>
-
+    <?php 
+              }
+          ?>
     <div>
   <section id="h.p_-2QifO76EemO" class="yaqOZd" style=""><div class="IFuOkc"></div><div class="mYVXT"><div class="LS81yb VICjCf" tabindex="-1"><div class="hJDwNd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc"><div class="JNdkSc-SmKAyb"><div class="" jscontroller="sGwD4d" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jsname="F57UId"><div class="oKdM2c Kzv0Me"><div id="h.p_f13PpPSOEel5" class="hJDwNd-AhqUyc-uQSCkd jXK9ad D2fZ2 OjCsFc wHaque GNzUNc"><div class="jXK9ad-SmKAyb"><div class="tyJCtd mGzaTb baZpAe"><p id="h.p_SXId5gh2EemL" class="CDt4Ke zfr3Q" style="text-align: center;"><strong>Tentative Schedule</strong></p></div></div></div></div></div></div></div></div></div></section>
     </div>
