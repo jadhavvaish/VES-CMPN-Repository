@@ -119,9 +119,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
          document.signupForm.ves_id.focus() ;
          return false;
        }
-       return true;
-     }
-     function validatepass() {
+    //    return true;
+    //  }
+    //  function validatepass() {
        //for password validation
        var pass = document.signupForm.password.value;
        var con_pass = document.signupForm.confirm_password.value;
@@ -153,19 +153,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         document.signupForm.con_pass.focus() ;
         return false;
        }
-       return( true );
+       return true;
     }
 </script>
 </head>
 <body>
 <A href="homepage.html"><Img Src="Capture.png"></a>
-    <form name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method ="post" style="border:1px solid #ccc">
+    <form name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method ="post" style="border:1px solid #ccc" onsubmit="return validateves_id()">
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
           <hr>
           <label for="ves_id"><b>VES ID</b></label>
-          <input type="text" placeholder="Enter VES ID" name="ves_id" value="<?php echo $ves_id; ?>" onblur="validateves_id()" required>
+          <input type="text" placeholder="Enter VES ID" name="ves_id" value="<?php echo $ves_id; ?>"  required>
           <span class="help-block"><?php echo $ves_id_err; ?></span>
 
           <label for="password"><b>Password</b></label>
