@@ -47,7 +47,7 @@ $link->close();
       </div>
 </div>
 </div>
-
+  <center>
   <fieldset>
   <h2 class='mt-2'> <legend exp><strong> <ins><p style="font-size:30px">Recently Added</legend> </h2>
   <!-- TABLE CONSTRUCTION-->
@@ -65,6 +65,7 @@ $link->close();
               }
               ?>
   </fieldset>
+  </center>
   <?php include ("footer.php"); ?>
 
 

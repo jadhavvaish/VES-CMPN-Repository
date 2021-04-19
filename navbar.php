@@ -36,7 +36,7 @@
   <a class="logout" href=logout.php>Log Out</a>
   <a class="upload  <?php
     // Check if the user is student, if not hide sensitive information
-    if($_SESSION["role"]!=0){
+    if($_SESSION["role"]==0){
       echo 'hide';
     }
     ?>" href="upload.php"><i class="ionicons ion-android-upload"></i></a>

@@ -40,7 +40,7 @@ $link->close();
   <a class="nav-link mt-2" id="v-pills-messages-tab" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false">2017-18</a>
 </div>
     <div class='col'>
-    <h2 class='mt-3 mb-0 ml-5'><U>Praxis 2k21</U></h2>
+    <h2 class='mt-3 mb-0 ml-5'><U>Praxis 2021</U></h2>
       <br>
 
     
@@ -48,8 +48,8 @@ $link->close();
                while($rows=$result->fetch_assoc())
               {
               ?>
-              <div class="card mb-3">
-              <img src="data:image/jpeg;base64,'.base64_encode(<?php echo $rows['image'];?>).'" class="card-img-top" alt="...">
+              <div class="card mb-3 container-fluid">
+              <img src="<?php echo $rows['image'];?>" class="card-img-top event-img mx-auto" alt="...">
               <div class="card-body">
     <h5 class="card-title">Welcome to <?php echo $rows['name'];?> <?php echo $rows['event_year'];?> !</h5>
     <p class="card-text">

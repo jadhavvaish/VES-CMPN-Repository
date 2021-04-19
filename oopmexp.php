@@ -11,7 +11,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 // SQL query to select data from database
-$sql = "SELECT * FROM upload WHERE Subject='DSGT' AND Category='experiment' ";
+$sql = "SELECT * FROM upload WHERE Subject='OOPM' AND Category='experiment' ";
 $result = $link->query($sql);
 $link->close();
 ?>
@@ -34,15 +34,15 @@ $link->close();
 <div class='container ml-0'>
 <div class='row'>
 <div class="nav flex-column nav-pills col-lg-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-  <a class="nav-link active " href="dsgtexp.php" >Experiment</a>
-  <a class="nav-link mt-2" href="dsgtass.php"  >Assignment</a>
-  <a class="nav-link mt-2" href="dsgtnotes.php" >Notes</a>
+  <a class="nav-link active " href="oopmexp.php" >Experiment</a>
+  <a class="nav-link mt-2" href="oopmass.php"  >Assignment</a>
+  <a class="nav-link mt-2" href="oopmnotes.php" >Notes</a>
 </div>
 
 <!-- Page content -->
 <div class="col-lg-9">
  
- <h2 class='mt-3'>DSGT Experiments(2020-21)</h2>
+ <h2 class='mt-3'>OOPM Experiments(2020-21)</h2>
   
            <?php 
                while($rows=$result->fetch_assoc())

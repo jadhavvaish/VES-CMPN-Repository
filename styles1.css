@@ -200,3 +200,7 @@ body{
 .card{
   background-color:#dbf6e9 ;
 }
+.event-img{
+  height: 560px;
+  width: 400px;
+}
