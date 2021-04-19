@@ -115,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           <h1>Sign In</h1>
           <hr>
           <label for="ves_id"><b>VES ID</b></label>
-          <input type="text" placeholder="Enter VES ID" name="ves_id" value="<?php echo $ves_id; ?>" onblur="validateves_id()" required>
+          <input type="text" placeholder="Enter VES ID" name="ves_id" value="<?php echo $ves_id; ?>"  required>
           <span class="help-block"><?php echo $ves_id_err; ?></span>
           <label for="password"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="password" required>
