@@ -4,9 +4,9 @@ require_once "config.php";
 // Initialize the session
 session_start();
 
-// Check if the user is admin, if not then redirect them to login page
+// Check if the user is admin, if not then redirect them to Homepage
 if($_SESSION["role"]!=2){
-    header("location: login.php");
+    header("location: homepage.php");
     exit;
 }
 ?>
