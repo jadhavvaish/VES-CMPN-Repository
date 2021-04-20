@@ -42,7 +42,7 @@ $link->close();
 <!-- Page content -->
 <div class="col-lg-9">
  
- <h2 class='mt-3'>OOPM Experiments(2020-21)</h2>
+ <h2 class='mt-3'>OOPM Notes(2020-21)</h2>
   
            <?php 
                while($rows=$result->fetch_assoc())
