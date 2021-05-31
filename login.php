@@ -110,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 <Img Src="Capture.png">
-    <form name="loginForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="border:1px solid #ccc">
+    <form name="loginForm" onsubmit="return validateves_id()" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" style="border:1px solid #ccc">
         <div class="container">
           <h1>Sign In</h1>
           <hr>
@@ -126,7 +126,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
           <div class="clearfix">
 
-            <button type="submit" class="signinbtn" value="Login" onclick="validateves_id()">Sign In</button>
+            <button type="submit" class="signinbtn" value="Login">Sign In</button>
           </div>
         </div>
       </form>
