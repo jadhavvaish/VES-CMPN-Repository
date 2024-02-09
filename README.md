@@ -1,5 +1,6 @@
 # VES- CMPN REPOSITORY
----  
+**Overview**
+The VES-CMPN Repository serves as a comprehensive resource for VES CMPN professionals, and students. It includes a collection of curated materials, resources, projects, updates on various events, etc.
 ### A single portal for the Department of Computer Engineering
 
 ![Signup](https://user-images.githubusercontent.com/78576375/187079320-b06fede6-7274-4d93-b7ab-9648944fb7b1.PNG)
